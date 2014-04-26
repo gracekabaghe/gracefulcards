@@ -7,24 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-      <ul class="nav nav-tabs ">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", root_path %></li>
-        <li><%= link_to "Wedding Cards", root_path %></li>
-        <li><%= link_to "Birthdays", root_path %></li>
-        <li><%= link_to "Thankyou", root_path %></li>
-        <li><%= link_to "Get Well Soon", root_path %></li>
-        <li><%= link_to "Congratulations", root_path %></li>
-        
-      </ul>
-      <%= render 'layouts/header' %>
-      <div class="container">
        
-<%= yield %>
+  <%= yield %>
       
-    </div>
-    <%= render 'layouts/footer' %>
-    
 </body>
 </html>
