@@ -1,3 +1,5 @@
 Gracefulcards::Application.routes.draw do
-  root to: 'welcome#index'  
+  resources :cards
+
+  root to: 'cards#index'  
 end
