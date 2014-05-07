@@ -4,6 +4,10 @@ body {
   padding-top:70px;
 }
 
+.pull-right {
+  float: right;
+}
+
 .productsrow {
  -moz-column-width: 18em;
  -webkit-column-width: 18em;
@@ -41,9 +45,6 @@ body {
 .user-info {
   margin-top: 9px;
 }
-
-
-
 
 
  .nav {

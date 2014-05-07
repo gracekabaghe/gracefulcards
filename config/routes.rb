@@ -3,7 +3,11 @@ Gracefulcards::Application.routes.draw do
 
   resources :cards
 
-  match "about" => 'welcome#about', via: :get
+  get "about" => 'welcome#about'
 
-  root to: 'cards#index'  
+  authenticated :user do
+    root to: 'cards#index'
+  end
+
+  root to: 'welcome#index'  
 end
